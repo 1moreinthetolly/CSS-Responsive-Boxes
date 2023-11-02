@@ -1,3 +1,107 @@
+*{
+  border: 1px solid red;
+}
+
 body {
   background: papayawhip;
+  text-align: center;
 }
+
+.container{
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.a{
+  background-color: goldenrod;
+  height: 20vh;
+  margin: 10px;
+}
+
+.b{
+  background-color: darkcyan;
+  margin: 10px;
+  height: 40vh
+}
+
+.middle-one{
+  display: flex;
+  flex-direction: row;
+  height: 15vh;
+  margin:10px;
+  justify-content: space-between;
+}
+
+.c{
+  background-color: blueviolet;
+  width: 20vw;
+}
+
+.d{
+  background-color: aqua;
+  width: 20vw
+ 
+}
+
+.e{
+  background-color: yellowgreen;
+  width: 20vw;
+}
+
+.f{
+  background-color: darkorange;
+  height: 20vh;
+  margin: 10px;
+}
+
+@media(min-width: 600px) {
+
+  .container{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .a{
+    width: 100%;
+  }
+
+  .b{
+    width: 100%;
+    margin: 0;
+  }
+
+  .middle{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 10px;
+    height: 75vh;
+    flex-basis: 75%;
+  }
+
+  .middle-one{
+    width: 100%;
+    margin: 0;
+    height: 30vh
+  }
+
+  .d{
+    margin-inline: 10px;
+  }
+  
+  .middle{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 10px;
+    width: 75vw;
+  }
+
+  .f{
+    width: 15vw;
+    height: 72vh;
+  }
+}
+
